@@ -1,12 +1,3 @@
-# Dependencies
-node_modules/
-greenqueue/node_modules/
-
-# Production builds
-dist/
-greenqueue/dist/
-dist-ssr/
-
 # Logs
 logs
 *.log
@@ -14,14 +5,29 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
-# OS and Editor files
+# Dependency directories
+node_modules/
+**/node_modules/
+
+# Production build outputs
+dist/
+**/dist/
+dist-ssr
+*.local
+
+# Editor & OS files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-Thumbs.db
-.vscode/
-.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# TypeScript cache
+*.tsbuildinfo
+.tmp/
